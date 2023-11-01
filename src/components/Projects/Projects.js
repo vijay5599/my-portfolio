@@ -2,12 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import sticky from "../../Assets/Projects/sticky-notes.png";
+import weather from "../../Assets/Projects/weather.png";
+import ecommerce from "../../Assets/Projects/commerce.png";
+
 
 function Projects() {
   return (
@@ -23,12 +21,33 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={sticky}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              // ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Sticky-Notes"
+              description="Developed a web-based Sticky Notes application using React, allowing users to create, edit, and organize digital sticky notes.Implemented features for creating and deleting notes, customizable colors, and draggable functionality for an intuitive user experience."
+              ghLink="https://github.com/vijay5599/sticky-notes.git"
+              // demoLink="https://chatify-49.web.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={weather}
+              isBlog={false}
+              title="Weather App"
+              description="Designed and developed a user-friendly weather application to provide real-time weather information. Integrated a third-party weather API to fetch and display accurate weather data."
+              ghLink="https://github.com/vijay5599/Weather-App.git"
+              // demoLink="https://chatify-49.web.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ecommerce}
+              isBlog={false}
+              title="Ecommerce Website"
+              description="Designed and developed a full-fledged E-commerce website utilizing the MERN (MongoDB, Express.js, React, Node.js) stack, ensuring seamless end-to-end functionality. Developed an admin panel to manage product listings, orders, and user accounts, enhancing the site's administrative capabilities"
+              ghLink="https://github.com/vijay5599/MERN-ecommerce-Frontend.git"
+              // ghLink="https://github.com/vijay5599/MERN-ecommerce-backend.git"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
         </Row>
