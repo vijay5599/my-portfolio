@@ -31,7 +31,7 @@ function Footer() {
             </li>
 
             <li className="social-icons">
-              <a
+  <a
                 href="https://www.linkedin.com/in/vijay-v-benal-184926169/"
                 style={{ color: "white" }}
                 target="_blank"
