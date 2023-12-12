@@ -18,8 +18,6 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactGA from "react-ga";
 
-const TRACKING_ID = "G-6XGTC7LDFD";
-ReactGA.initialize(TRACKING_ID);
 function App() {
   const [load, upadateLoad] = useState(true);
 
@@ -30,9 +28,8 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
-
-
-  
+  const TRACKING_ID = "G-6XGTC7LDFD";
+  ReactGA.initialize(TRACKING_ID);
 
   return (
     <Router>
