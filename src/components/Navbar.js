@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import Avatar from "../Assets/avatar.svg"
+import Avatar from "../Assets/avatar.svg";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 
@@ -15,7 +15,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
-
+import ReactGA from "react-ga";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -29,6 +29,18 @@ function NavBar() {
   }
 
   window.addEventListener("scroll", scrollHandler);
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
+  const trackButtonClick = (buttonName) => {
+    ReactGA.event({
+      category: "Button Click",
+      action: "Click",
+      label: buttonName,
+    });
+  };
 
   return (
     <Navbar
@@ -54,7 +66,14 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link
+                as={Link}
+                to="/"
+                onClick={() => {
+                  updateExpanded(false);
+                  trackButtonClick("Home");
+                }}
+              >
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
@@ -63,7 +82,10 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/about"
-                onClick={() => updateExpanded(false)}
+                onClick={() => {
+                  updateExpanded(false);
+                  trackButtonClick("About");
+                }}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
@@ -73,7 +95,10 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/project"
-                onClick={() => updateExpanded(false)}
+                onClick={() => {
+                  updateExpanded(false);
+                  trackButtonClick("Projects");
+                }}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
@@ -86,7 +111,10 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/resume"
-                onClick={() => updateExpanded(false)}
+                onClick={() => {
+                  updateExpanded(false);
+                  trackButtonClick("Resume");
+                }}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
@@ -96,6 +124,7 @@ function NavBar() {
                 href="https://github.com/vijay5599/my-portfolio.git"
                 target="_blank"
                 className="fork-btn-inner"
+                onClick={() => trackButtonClick("GitHub Fork")}
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
                 <AiFillStar style={{ fontSize: "1.1em" }} />

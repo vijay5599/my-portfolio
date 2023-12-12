@@ -10,15 +10,18 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
+  Navigate,
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ReactGA from "react-ga";
 
+const TRACKING_ID = "G-6XGTC7LDFD";
+ReactGA.initialize(TRACKING_ID);
 function App() {
-  const [load,upadateLoad] = useState(true);
+  const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -27,6 +30,9 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
+
+
+  
 
   return (
     <Router>
@@ -39,7 +45,7 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>
