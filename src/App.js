@@ -16,10 +16,11 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ReactGA from "react-ga";
-
-const TRACKING_ID = "UA-296179722-1";
+import ReactGA from "react-analytics-ga4";
+// G-6XGTC7LDFD
+const TRACKING_ID = "G-6XGTC7LDFD";
 ReactGA.initialize(TRACKING_ID);
+console.log("Google Analytics initialized");
 function App() {
   const [load, upadateLoad] = useState(true);
 
@@ -29,6 +30,11 @@ function App() {
     }, 1200);
 
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    console.log("Tracking pageview:", window.location.pathname);
+    ReactGA.send({ hitType: "Pageview", page: "/", title: "Home" });
   }, []);
 
   return (

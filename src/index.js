@@ -3,10 +3,15 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { Analytics } from "react-analytics-ga4";
+
+const TRACKING_ID = "G-6XGTC7LDFD";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Analytics id={TRACKING_ID}>
+      <App />
+    </Analytics>
   </React.StrictMode>,
   document.getElementById("root")
 );

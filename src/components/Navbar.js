@@ -15,7 +15,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
-import ReactGA from "react-ga";
+import ReactGA from "react-analytics-ga4";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -30,9 +30,10 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  }, []);
+  // useEffect(() => {
+  //   console.log("Tracking pageview:", window.location.pathname);
+  //   ReactGA.pageview(window.location.pathname);
+  // }, []);
 
   const trackButtonClick = (buttonName) => {
     ReactGA.event({
