@@ -18,7 +18,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactGA from "react-ga4";
 // G-6XGTC7LDFD
-const TRACKING_ID = "G-6XGTC7LDFD";
+const TRACKING_ID = "G-BEZBF08RYC";
 ReactGA.initialize(TRACKING_ID);
 console.log("Google Analytics initialized");
 function App() {
