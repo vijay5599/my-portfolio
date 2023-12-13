@@ -3,15 +3,20 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-// import { Analytics } from "react-analytics-ga4";
+import ReactGA from "react-ga4";
+// G-6XGTC7LDFD
+// const TRACKING_ID = "G-BEZBF08RYC";
+ReactGA.initialize("G-BEZBF08RYC");
+console.log("Google Analytics initialized");
 
-// const TRACKING_ID = "G-6XGTC7LDFD";
+ReactGA.send({
+  hitType: "pageview",
+  page: window.location.pathname + window.location.search,
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Analytics id={TRACKING_ID}> */}
-      <App />
-    {/* </Analytics> */}
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

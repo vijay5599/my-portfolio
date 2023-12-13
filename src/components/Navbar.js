@@ -30,12 +30,10 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
-  // useEffect(() => {
-  //   console.log("Tracking pageview:", window.location.pathname);
-  //   ReactGA.pageview(window.location.pathname);
-  // }, []);
+  
 
   const trackButtonClick = (buttonName) => {
+    console.log("button clicked", buttonName);
     ReactGA.event({
       category: "Button Click",
       action: "Click",
