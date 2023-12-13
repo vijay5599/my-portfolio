@@ -4,7 +4,7 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import ReactGA from "react-analytics-ga4";
+// import ReactGA from "react-analytics-ga4";
 
 function Home() {
   //non interaction
