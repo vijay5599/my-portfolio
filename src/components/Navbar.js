@@ -16,6 +16,7 @@ import {
 
 import { CgFileDocument } from "react-icons/cg";
 import ReactGA from "react-ga4";
+
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -29,8 +30,6 @@ function NavBar() {
   }
 
   window.addEventListener("scroll", scrollHandler);
-
-  
 
   const trackButtonClick = (buttonName) => {
     console.log("button clicked", buttonName);

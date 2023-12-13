@@ -18,6 +18,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactGA from "react-ga4";
 
+ReactGA.initialize("G-BEZBF08RYC");
+console.log("Google Analytics initialized");
 function App() {
   const [load, upadateLoad] = useState(true);
 
