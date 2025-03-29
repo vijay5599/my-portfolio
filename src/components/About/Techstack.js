@@ -19,7 +19,7 @@ import {
   DiMongodb,
   DiGit,
 } from "react-icons/di";
-import { SiFirebase, SiTailwindcss, SiBootstrap, SiMui } from "react-icons/si";
+import { SiTailwindcss, SiBootstrap, SiMui } from "react-icons/si";
 
 function Techstack() {
   return (
