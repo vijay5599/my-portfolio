@@ -7,7 +7,8 @@ import weather from "../../Assets/Projects/weather.png";
 import ecommerce from "../../Assets/Projects/commerce.png";
 import whac from "../../Assets/Projects/whac-mole.png";
 import memory from "../../Assets/Projects/memory.png";
-import linkedin from "../../Assets/Projects/linkedin.png";
+import saas from "../../Assets/Projects/saas.png";
+import zoom from "../../Assets/Projects/zoom.png";
 
 function Projects() {
   return (
@@ -18,9 +19,29 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={saas}
+              isBlog={false}
+              title="AI-Powered Image SaaS Platform"
+              description="Developed a full-stack AI-powered image processing platform using Next.js, MongoDB, and Cloudinary. Implemented authentication, payment integration, and secure APIs."
+              ghLink="https://github.com/vijay5599/imaginify.git"
+              demoLink="https://imaginify-swart.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={zoom}
+              isBlog={false}
+              title="Real-Time Video Conferencing App"
+              description="Built a Zoom-like video conferencing platform using Next.js, TypeScript, and getStream. Features include authentication (Clerk), real-time meetings, scheduling, recording, and screen sharing."
+              ghLink="https://github.com/vijay5599/zoom"
+              demoLink="https://zoom-liard-gamma.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ecommerce}
@@ -32,7 +53,7 @@ function Projects() {
               // demoLink=""
             />
           </Col>
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={whac}
               isBlog={false}
@@ -40,16 +61,16 @@ function Projects() {
               description="Designed and implemented a Whac-a-Mole game as part of a programming project, showcasing proficiency in game development, user interface design, and problem-solving."
               ghLink="https://github.com/vijay5599/whac-a-mole.git"
             />
-          </Col>
-          <Col md={4} className="project-card">
+          </Col> */}
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={memory}
               isBlog={false}
               title="Memory Game"
               description="Developed and implemented a Memory Game as a standalone project, showcasing expertise in game design.  Implemented core game mechanics, including card flipping, matching logic, and scoring systems"
             />
-          </Col>
-          <Col md={4} className="project-card">
+          </Col> */}
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={sticky}
               isBlog={false}
@@ -77,7 +98,7 @@ function Projects() {
               description="Designed and implemented a LinkedIn clone UI project, demonstrating proficiency in front-end development and user interface design. Created a visually appealing user interface, closely mimicking the key features and aesthetics of the LinkedIn platform."
               ghLink="https://github.com/vijay5599/linkedin-clone.git"
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>

@@ -2,9 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -17,35 +15,47 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I believe I am a very ambitious person who loves to work on making
-              the website work well. Working on the web is my passion as I love
-              to work on exciting projects.
-              <br />
-              {/* <br />I have always been interested in learning new technologies
-              and languages, so much so that it has become a passion of mine
+              I am a passionate <b className="purple">Full Stack Developer</b>{" "}
+              with expertise in
               <i>
-                <b className="purple"> Javascript</b>
+                <b className="purple"> React.js, Node.js, FastAPI,</b>
               </i>
-              <br /> */}
-              <br />
-              My field of Interest's are building new &nbsp;
+              &nbsp; and cloud platforms like
               <i>
-                <b className="purple">Web Technologies and Products. </b>
+                <b className="purple"> Azure.</b>
               </i>
               <br />
+              <br />I love working on{" "}
+              <b className="purple">scalable web applications</b> and optimizing
+              APIs for performance. Currently, at{" "}
+              <b className="purple">GrapheneAI</b>, I develop
+              <b className="purple"> AI-driven web solutions</b>, cloud
+              deployments, and
+              <b className="purple"> microservices architecture</b>.
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with
+              <br />
+              My field of interest includes building &nbsp;
+              <i>
+                <b className="purple">
+                  modern web technologies and AI-powered products.
+                </b>
+              </i>
+              <br />
+              <br />
+              One of my key projects was an &nbsp;
+              <b className="purple">AI-powered Image SaaS platform</b>, which
+              leveraged
+              <i>
+                <b className="purple"> Next.js, MongoDB, Cloudinary</b>
+              </i>
+              &nbsp; and integrated
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  secure authentication & payment systems.
                 </b>
               </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js.</b>
-              </i>
+              <br />
             </p>
           </Col>
           <Col md={4} className="myAvtar">
