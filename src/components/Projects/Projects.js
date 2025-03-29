@@ -2,11 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import sticky from "../../Assets/Projects/sticky-notes.png";
-import weather from "../../Assets/Projects/weather.png";
 import ecommerce from "../../Assets/Projects/commerce.png";
-import whac from "../../Assets/Projects/whac-mole.png";
-import memory from "../../Assets/Projects/memory.png";
 import saas from "../../Assets/Projects/saas.png";
 import zoom from "../../Assets/Projects/zoom.png";
 
