@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# 👋 Hi, I'm Vijay Benal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🎯 **Fullstack Developer** with 2+ years of experience building scalable web apps and AI-powered tools. Passionate about clean code, automation, and building meaningful user experiences.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🛠️ Tech Stack
 
-### `npm start`
+**Languages:** JavaScript, Python, TypeScript, SQL  
+**Frontend:** React.js, Redux, HTML5, CSS3  
+**Backend:** FastAPI, Node.js, Express.js  
+**DevOps:** Docker, GitLab CI/CD, Azure DevOps  
+**Cloud & DB:** Azure Blob Storage, PostgreSQL, App Services  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 💼 Experience
 
-### `npm test`
+**Software Developer** — *Graphene AI* (Aug 2022 – Present)  
+- Built fullstack web apps using React, FastAPI, and Node.js  
+- Created and deployed LLM-powered tools using OpenAI APIs  
+- Improved performance and reduced release cycles using Docker + CI/CD pipelines  
+- Collaborated with designers & PMs in agile sprints to ship production-ready features  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Highlight Projects
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔹 [ArticleAgent]
+AI-based article generation platform  
+- React.js + FastAPI + OpenAI GPT  
+- Used by 1000+ users/month  
+- Reduced load time by 40%, boosted user productivity by 50%
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🔹 [DaizyAI]
+Analytics dashboard for real-time decision-making  
+- RESTful APIs + Chart.js visualizations  
+- FastAPI backend scaling to 100K+ API calls/day
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📂 Portfolio & Resume
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- 🌐 [**Visit My Portfolio**](https://my-portfolio-iota-seven-20.vercel.app/)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/vijay-v-benal) • [GitHub](https://github.com/vijay5599) • [Email](mailto:vbvijay84@gmail.com)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🤝 Let's Connect
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+I'm actively looking for new opportunities where I can learn, contribute, and build impactful products.  
+Feel free to reach out or explore my work!
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
