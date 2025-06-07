@@ -43,10 +43,10 @@ function Home2() {
               <br />
               <br />
               One of my key projects was an &nbsp;
-              <b className="purple">AI-powered Image SaaS platform</b>, which
+              <b className="purple">All-in-One Image Transformation Toolkit</b>, which
               leveraged
               <i>
-                <b className="purple"> Next.js, MongoDB, Cloudinary</b>
+                <b className="purple"> React.js, MongoDB, Cloudinary</b>
               </i>
               &nbsp; and integrated
               <i>
